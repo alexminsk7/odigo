@@ -1,0 +1,33 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Operator Mono Lig, sans-serif;
+  font-size: $base;
+  line-height: $base-lineheight;
+  color: $main-color;
+}
+
+.container {
+  max-width: 1060px;
+  margin: 0 auto;
+  outline: 1px solid cyan;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $link;
+}

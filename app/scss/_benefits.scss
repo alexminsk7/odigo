@@ -1,0 +1,32 @@
+.benefits {
+  .benefits__container {
+    max-width: 1262px;
+    margin: 0 auto;
+    box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+    position: relative;
+
+    .benefits__title {
+      width: 100%;
+      font-weight: 500;
+      font-size: 35px;
+      line-height: 42px;
+      color: $main-color;
+      padding: 93px 100px 88px 100px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateY(-100%);
+      background-color: #fff;
+    }
+    .benefits__cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 55px;
+
+      .benefits__card {
+        height: 288px;
+        outline: 1px solid red;
+      }
+    }
+  }
+}
