@@ -23,6 +23,17 @@ body {
   outline: 1px solid cyan;
 }
 
+.container__full {
+  max-width: 1262px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 li {
   list-style: none;
 }
@@ -30,4 +41,47 @@ li {
 a {
   text-decoration: none;
   color: $link;
+}
+
+.info__link {
+  display: inline-block;
+  padding-right: 59px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: $more;
+  text-transform: uppercase;
+  background: url(../images/svg/arrow.svg) no-repeat 95% center;
+  transition: all 0.3s;
+  &:hover,
+  &:focus {
+    background: url(../images/svg/arrow.svg) no-repeat right center;
+  }
+}
+
+.section__title {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 42px;
+  color: $main-color;
+  position: relative;
+  padding-bottom: 10px;
+  &::after {
+    display: block;
+    content: "";
+    width: 253px;
+    height: 3px;
+    background-color: #fff;
+  }
+}
+
+.msg {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  background: #20454b;
+  padding: 5px;
+  background-repeat: 5px;
+  color: #eee;
+  font-size: 24px;
 }
