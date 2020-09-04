@@ -1,5 +1,6 @@
 .benefits {
   padding-bottom: 130px;
+
   .benefits__container {
     max-width: 1262px;
     margin: 0 auto;
@@ -14,7 +15,11 @@
       left: 0;
       transform: translateY(-100%);
       background-color: #fff;
+      &::after {
+        display: none;
+      }
     }
+
     .benefits__cards {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -24,7 +29,6 @@
       .benefits__card {
         grid-column: span 1;
         margin-bottom: 112px;
-        outline: 1px solid red;
 
         .benefits__icon {
           max-width: 66px;

@@ -20,13 +20,11 @@ body {
 .container {
   max-width: 1060px;
   margin: 0 auto;
-  outline: 1px solid cyan;
 }
 
 .container__full {
   max-width: 1262px;
   margin: 0 auto;
-  outline: 1px solid red;
 }
 
 img {
@@ -71,7 +69,10 @@ a {
     content: "";
     width: 253px;
     height: 3px;
-    background-color: #fff;
+    background-color: #006dfe;
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
 }
 
