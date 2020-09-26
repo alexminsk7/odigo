@@ -20,11 +20,13 @@ body {
 .container {
   max-width: 1060px;
   margin: 0 auto;
+  outline: 1px solid red;
 }
 
 .container__full {
   max-width: 1262px;
   margin: 0 auto;
+  outline: 1px solid cyan;
 }
 
 img {
@@ -66,7 +68,7 @@ a {
   padding-bottom: 10px;
   &::after {
     display: block;
-    content: "";
+    content: '';
     width: 253px;
     height: 3px;
     background-color: #006dfe;
@@ -74,15 +76,4 @@ a {
     bottom: 0;
     left: 0;
   }
-}
-
-.msg {
-  width: 400px;
-  margin: 0 auto;
-  text-align: center;
-  background: #20454b;
-  padding: 5px;
-  background-repeat: 5px;
-  color: #eee;
-  font-size: 24px;
 }
