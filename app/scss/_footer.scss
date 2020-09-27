@@ -1,0 +1,40 @@
+.footer {
+  background: #0e1d28;
+  padding: 120px 0;
+
+  .footer__item {
+    display: flex;
+    flex-wrap: wrap;
+
+    .footer__logo {
+      width: 50%;
+    }
+
+    .footer__nav {
+      width: 50%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .footer__menu-item {
+        line-height: 24px;
+        transition: all 0.3s;
+        &:hover,
+        &:focus,
+        &:active {
+          opacity: 0.8;
+        }
+
+        .footer__title {
+          font-size: 18px;
+          color: $link;
+          cursor: pointer;
+        }
+
+        .footer__link {
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}

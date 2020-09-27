@@ -20,13 +20,11 @@ body {
 .container {
   max-width: 1060px;
   margin: 0 auto;
-  outline: 1px solid red;
 }
 
 .container__full {
   max-width: 1262px;
   margin: 0 auto;
-  outline: 1px solid cyan;
 }
 
 img {
@@ -54,7 +52,8 @@ a {
   background: url(../images/svg/arrow.svg) no-repeat 95% center;
   transition: all 0.3s;
   &:hover,
-  &:focus {
+  &:focus,
+  &:active {
     background: url(../images/svg/arrow.svg) no-repeat right center;
   }
 }
@@ -76,4 +75,8 @@ a {
     bottom: 0;
     left: 0;
   }
+}
+
+.header--active {
+  background: #0e1d28;
 }

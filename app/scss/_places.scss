@@ -24,7 +24,7 @@
       overflow: hidden;
       &::after {
         display: block;
-        content: "";
+        content: '';
         position: absolute;
         top: 0;
         left: 0;
@@ -33,7 +33,9 @@
         background-color: rgba(21, 24, 36, 0.4);
         z-index: 2;
       }
-      &:hover {
+      &:hover,
+      &:focus,
+      &:active {
         transform: scale(1.02);
       }
 
