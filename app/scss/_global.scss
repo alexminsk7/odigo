@@ -17,14 +17,18 @@ body {
   color: $main-color;
 }
 
+.container,
+.container__full {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .container {
   max-width: 1060px;
-  margin: 0 auto;
 }
 
 .container__full {
   max-width: 1262px;
-  margin: 0 auto;
 }
 
 img {
@@ -78,5 +82,5 @@ a {
 }
 
 .header--active {
-  background: #0e1d28;
+  background: rgba(14, 29, 40, 0.85);
 }

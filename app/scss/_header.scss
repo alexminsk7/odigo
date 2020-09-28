@@ -6,36 +6,66 @@
   margin-top: 40px;
   padding-top: 20px;
   padding-bottom: 20px;
-  z-index: 99;
-  transition: all 0.3s;
+  z-index: 8;
+  transition: all 0.4s;
 
   .header__container {
-    background: rgba(0, 0, 0, 0.4);
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
     justify-content: space-between;
 
-    .header__list {
-      display: flex;
-      flex-wrap: wrap;
+    .header__nav {
+      .header__list {
+        display: flex;
+        flex-wrap: wrap;
 
-      .header__item {
-        margin-right: 80px;
-        &:last-child {
-          margin-right: 0;
-        }
+        .header__item {
+          margin-right: 80px;
+          &:last-child {
+            margin-right: 0;
+          }
 
-        .header__link {
-          font-size: 18px;
-          line-height: 24px;
-          transition: all 0.3s;
-          &:hover,
-          &:focus,
-          &:active {
-            opacity: 0.75;
+          .header__link {
+            font-size: 18px;
+            line-height: 24px;
+            transition: all 0.3s;
+            &:hover,
+            &:focus,
+            &:active {
+              opacity: 0.75;
+            }
           }
         }
+      }
+    }
+
+    .header__burger {
+      display: none;
+      width: 35px;
+      height: 28px;
+      position: relative;
+
+      .burger__line {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: $link;
+        position: absolute;
+        left: 0;
+      }
+
+      .burger__line--first {
+        top: 0;
+      }
+
+      .burger__line--second {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .burger__line--third {
+        bottom: 0;
       }
     }
   }
