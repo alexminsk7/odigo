@@ -1,3 +1,19 @@
+@media screen and (max-width: 874px) {
+  .form__input {
+    margin-bottom: 25px;
+  }
+  .benefits__cards {
+    padding: 0 15px !important;
+    grid-column-gap: 35px !important;
+  }
+  .benefits__title {
+    padding: 55px 15px !important;
+  }
+  .benefits__icon {
+    max-width: 58px !important;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .header__burger {
     display: block !important;
@@ -30,8 +46,8 @@
   }
 
   .header__link {
-    font-size: 42px;
-    line-height: 48px;
+    font-size: 42px !important;
+    line-height: 48px !important;
   }
 
   .header__close {

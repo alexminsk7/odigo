@@ -43,8 +43,10 @@
     .header__burger {
       display: none;
       width: 35px;
-      height: 28px;
+      height: 30px;
       position: relative;
+      margin-bottom: 3px;
+      cursor: pointer;
 
       .burger__line {
         display: block;
@@ -60,8 +62,16 @@
       }
 
       .burger__line--second {
+        // margin-left: 5px;
+        // width: 85%;
         top: 50%;
+        transition: all 0.4s;
         transform: translateY(-50%);
+        // &:hover,
+        // &:focus,
+        // &:active {
+        //   margin-left: 0;
+        // }
       }
 
       .burger__line--third {
