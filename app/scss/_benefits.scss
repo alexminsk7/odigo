@@ -25,6 +25,7 @@
       grid-template-columns: repeat(3, 1fr);
       grid-column-gap: 55px;
       padding: 0 100px;
+      margin-top: 1px;
 
       .benefits__card {
         grid-column: span 1;
