@@ -8,8 +8,8 @@
   .top__cards {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-column-gap: 57px;
-    grid-row-gap: 57px;
+    column-gap: 57px;
+    row-gap: 57px;
 
     .top__card {
       display: flex;
